@@ -12,7 +12,7 @@ body::before {
   left: -10px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
-  background: url("/adas.png") no-repeat center center fixed;
+  background: url("/adas.webp") no-repeat center center fixed;
   background-size: cover;
   filter: blur(10px);
   z-index: -1;

@@ -116,7 +116,7 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <button className="logo" onClick={() => navigate('/')} aria-label="Go to home page">
-        <img src="/FEVICON.png" alt="Synthwave Roleplay logo" />
+        <img src="/FEVICON.webp" alt="Synthwave Roleplay logo" />
       </button>
       <nav className="navigation" aria-label="Primary navigation">
         <button className="nav-link" onClick={() => navigate('/rules')}>

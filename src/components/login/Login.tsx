@@ -50,7 +50,7 @@ const Login: React.FC = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <img className="login-logo" src="/FEVICON.png" alt="OneVision Synthwave" />
+        <img className="login-logo" src="/FEVICON.webp" alt="OneVision Synthwave" />
         <h1 className="welcome-title">WELCOME</h1>
         <p className="login-intro">
           Sign in with your Discord account to access your Synthwave account.

@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           </div>
           <div className="img-wrapper">
             <img
-              src="/stick.png"
+              src="/stick.webp"
               className="img-right"
               alt="Synthwave Roleplay emblem"
             />

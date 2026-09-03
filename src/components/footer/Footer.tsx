@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img
-            src="/FEVICON.png"
+            src="/FEVICON.webp"
             alt="Synthwave Roleplay logo"
           />
         </div>
