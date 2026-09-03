@@ -1,0 +1,76 @@
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 240px;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.about-us-text {
+  flex: 0 1 25%;
+  padding-right: 10px;
+}
+
+.about-us-title {
+  font-size: 5rem;
+  color: #8685ef;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: hidden;
+}
+
+.about-us-description {
+  font-size: 1rem;
+  color: #cacaca;
+  font-family: "Roboto";
+  text-overflow: hidden;
+  max-width: 25vw;
+}
+
+.about-us-buttons {
+  display: flex;
+  margin-top: 2vh;
+  gap: 10px;
+}
+
+.about-us-image {
+  display: flex;
+  text-align: right;
+  margin-right: -20vh;
+  transition: opacity 0.3s ease;
+}
+
+.aboutus-img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .about-us-description {
+    font-size: 1rem;
+    max-width: 80vw;
+  }
+
+  .about-us-image {
+    display: none;
+  }
+
+  .aboutus-img {
+    display: none;
+  }
+}

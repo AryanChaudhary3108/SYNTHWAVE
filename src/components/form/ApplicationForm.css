@@ -1,0 +1,166 @@
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 16px;
+  border: 1px solid #333244;
+  background-color: #242424;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #333244;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  scroll-behavior: smooth;
+}
+
+textarea::-webkit-scrollbar {
+  background-color: #242424;
+  width: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #8685ef;
+  border-radius: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #8685ef;
+}
+
+.form-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+  background-color: #8685ef;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.form-button {
+  background-color: #8685ef;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form-button {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.submit-message {
+  font-size: 2rem;
+  color: #8685ef;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.disabled-message {
+  font-size: 2rem;
+  color: #8685ef;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.info-message {
+	margin: 10px 0;
+	font-size: 1rem;
+}
+
+.label {
+	color: white;
+}
+
+.value {
+	color: #8685ef;
+	font-weight: normal;
+}
+
+.status {
+	font-weight: normal;
+}
+
+.status.accepted {
+	color: #52db72;
+}
+
+.status.rejected {
+	color: #ff5555;
+}
+
+.status.pending {
+	color: #18a7ff;
+}

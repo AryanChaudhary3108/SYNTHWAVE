@@ -1,0 +1,40 @@
+.whitelist-title {
+  margin-top: 100px;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.whitelist-desc {
+  margin-bottom: -70px;
+  text-align: center;
+  color: #cecece;
+}
+
+.whitelist {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.whitelist-card-button {
+  background: none;
+  border: none;
+}
+
+.whitelist-card {
+  height: 310px;
+  width: 330px;
+  margin-top: 40px;
+  background: none;
+  margin-bottom: -120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .whitelist-card {
+    height: 200px;
+    width: 240px;
+    margin-top: 60px;
+  }
+}

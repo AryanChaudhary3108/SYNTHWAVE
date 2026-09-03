@@ -1,0 +1,86 @@
+.rules-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.rules {
+  max-width: 750px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.rules h1 {
+  text-align: center;
+  font-family: "Doto";
+  color: #ff5555;
+  font-size: 3rem;
+  border-bottom: 2px solid #616161;
+  margin-bottom: 15px;
+}
+
+.rules .intro {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #d3d3d3;
+}
+
+.rules-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rules-section {
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-family: "Doto";
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #8685ef;
+}
+
+.rule-item h3 {
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.rule-item p {
+  font-size: 1rem;
+  color: #cecece;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rules-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.rules-buttons button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  border: 0;
+  background-color: #212121;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rules-buttons button:hover {
+  background-color: #8685ef;
+}

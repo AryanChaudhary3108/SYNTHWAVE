@@ -1,0 +1,118 @@
+.admin-actions-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  background-color: #1f2125;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}
+
+.admin-actions-header {
+  font-size: 1.75rem;
+  font-family: "Oswald";
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #8685ef;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: #2a2d33;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+  background-color: #33373d;
+}
+
+.feature-name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-header,
+.table-cell {
+  text-align: left;
+  padding: 12px;
+}
+
+.table-header {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.table-cell {
+  color: #fff;
+}
+
+.column-feature-name,
+.cell-feature-name {
+  width: 30%;
+}
+
+.column-status,
+.cell-status {
+  width: 20%;
+  text-align: center;
+}
+
+.column-cooldown,
+.cell-cooldown {
+  width: 30%;
+  text-align: center;
+}
+
+.column-actions,
+.cell-actions {
+  width: 20%;
+  text-align: center;
+}
+
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.pagination button {
+  background-color: #2c2c38;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #8685ef;
+  color: white;
+}

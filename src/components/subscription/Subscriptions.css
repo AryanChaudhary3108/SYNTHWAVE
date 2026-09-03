@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.subscriptions {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.subscriptions-title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.subscriptions-desc {
+  text-align: center;
+  color: #cecece;
+  line-height: 1.5;
+}
+
+.subscription-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.subscription-img {
+  user-select: none;
+  pointer-events: none;
+}
+
+.sub-button {
+  color: white;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: transparent;
+  transition: border-color 0.3s;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #616161;
+  padding: 0.4rem 1rem;
+  position: relative;
+  user-select: none;
+}
+
+.sub-button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.sub-button:hover {
+  border-color: #8685ef;
+}
+
+.sub-button:active {
+  border-color: #8685ef;
+}
+
+.ping-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+.carousel-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: transparent !important;
+  border: none;
+  border-radius: 50%;
+  color: #fff !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #8685ef;
+}
+
+.carousel-control:disabled {
+  background-color: transparent;
+  color: #fff;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+@keyframes ping {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}

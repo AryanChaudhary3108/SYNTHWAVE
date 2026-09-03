@@ -1,0 +1,90 @@
+.queue-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.queue-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid rgba(134, 133, 239, 0.7);
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  color: white;
+}
+
+.queue-border-overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  pointer-events: none;
+}
+
+.queue-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.queue-label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.queue-position {
+  font-size: 2.5rem;
+  color: #8685ef;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.divider {
+  margin: 0 5px;
+  color: white;
+}
+
+.queue-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.queue-timer span {
+  margin-left: -10px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.clock-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.queue-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.queue-buttons .Button {
+  flex: 1;
+}
+
+.queue-heading {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 20px 0;
+  text-align: center;
+}

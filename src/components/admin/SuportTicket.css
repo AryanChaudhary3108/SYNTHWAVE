@@ -1,0 +1,131 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: #1a1b22;
+  border-radius: 5px;
+}
+
+.message-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.admuser-message {
+  justify-content: flex-start;
+}
+
+.admsupport-message {
+  justify-content: flex-end;
+}
+
+.message-content {
+  display: inline-block;
+  padding: 10px 14px;
+  max-width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.admuser-message .message-content {
+  background-color: #292a36;
+  color: #e0e0e0;
+}
+
+.admsupport-message .message-content {
+  background-color: #292a36;
+  color: #e0e0e0;
+}
+
+.message-sender {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.admsupport-message .message-sender {
+  color: #8685ef;
+}
+
+.reply-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.reply-textarea {
+  width: 100%;
+  height: 40px !important;
+  padding: 6px !important;
+  background-color: #191923;
+  color: white;
+  border: 1px solid #333244;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+}
+
+.reply-textarea:focus {
+  outline: none;
+  border: 1px solid #333244;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.back-button {
+  background-color: #8685ef;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #8685ef;
+}
+
+.file-button-container {
+  margin-top: 1.3rem;
+}
+
+.attachment-group {
+  margin-top: 0.5rem;
+}
+
+.attachment-link {
+  color: #aaa;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.attachment-link:hover {
+  text-decoration: none;
+}
+
+.file-upload-container .file-item .action-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff5555;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}

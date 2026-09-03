@@ -1,0 +1,39 @@
+.JobApplication-title {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.JobApplication-desc {
+  margin-bottom: -70px;
+  text-align: center;
+  color: #cecece;
+}
+
+.JobApplication {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.JobApplication-card {
+  height: 40vh;
+  width: 40vw;
+  margin-top: 10vh;
+  margin-bottom: -30px;
+  max-width: 690px;
+  max-height: 470px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .JobApplication-card {
+    margin-top: 80px;
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: -50px;
+  }
+}
