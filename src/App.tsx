@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { supabase } from "./supabase";
-import Login from "./components/login/Login";
 import Header from "./components/header/Header";
-import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
-import PrivacyPolicy from "./components/pages/PrivacyPolicy";
-import Rules from "./components/pages/Rules";
-import Dashboard from "./components/admin/Dashboard";
-// import Application from "./components/form/ApplicationForm";
-// import Support from "./components/support/SupportTicket";
-import Queue from "./components/queue/QueueSystem";
+import Home from "./components/home/Home";
+
+// Lazy loaded routes for performance (code splitting)
+const Login = lazy(() => import("./components/login/Login"));
+const PrivacyPolicy = lazy(() => import("./components/pages/PrivacyPolicy"));
+const Rules = lazy(() => import("./components/pages/Rules"));
+const Dashboard = lazy(() => import("./components/admin/Dashboard"));
+const Queue = lazy(() => import("./components/queue/QueueSystem"));
+const NotFound = lazy(() => import("./components/pages/NotFound"));
 
 const Layout: React.FC = () => (
   <>
@@ -36,6 +37,13 @@ const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) =
     transition={{ duration: 0.5 }}>
     {children}
   </motion.div>
+);
+
+// Fallback for Suspense
+const LoadingFallback = () => (
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', color: '#00b4d8' }}>
+    LOADING SYSTEM...
+  </div>
 );
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode; condition: boolean }> = ({ children, condition }) => {
@@ -86,61 +94,59 @@ const App: React.FC = () => {
     },
     {
       path: "/login",
-      element: <PageTransition><Login /></PageTransition>,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <PageTransition><Login /></PageTransition>
+        </Suspense>
+      ),
     },
     {
       path: "/privacy",
-      element: <PageTransition><PrivacyPolicy /></PageTransition>,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <PageTransition><PrivacyPolicy /></PageTransition>
+        </Suspense>
+      ),
     },
     {
       path: "/rules",
       element: (
-        <PageTransition>
-          <Header />
-          <Rules />
-          <Footer />
-        </PageTransition>
+        <Suspense fallback={<LoadingFallback />}>
+          <PageTransition>
+            <Header />
+            <Rules />
+            <Footer />
+          </PageTransition>
+        </Suspense>
       ),
     },
     {
       path: "/queue",
-      element: <PageTransition><Queue /></PageTransition>,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <PageTransition><Queue /></PageTransition>
+        </Suspense>
+      ),
     },
     {
       path: "/dashboard",
       element: (
-        <PageTransition>
-          <ProtectedRoute condition={user && isAdmin}>
-            <Dashboard />
-          </ProtectedRoute>
-        </PageTransition>
+        <Suspense fallback={<LoadingFallback />}>
+          <PageTransition>
+            <ProtectedRoute condition={user && isAdmin}>
+              <Dashboard />
+            </ProtectedRoute>
+          </PageTransition>
+        </Suspense>
       ),
     },
-    /*
-    {
-      path: "/application",
-      element: (
-        <PageTransition>
-          <ProtectedRoute condition={!!user}>
-            <Application />
-          </ProtectedRoute>
-        </PageTransition>
-      ),
-    },
-    {
-      path: "/support",
-      element: (
-        <PageTransition>
-          <ProtectedRoute condition={!!user}>
-            <Support />
-          </ProtectedRoute>
-        </PageTransition>
-      ),
-    },
-    */
     {
       path: "*",
-      element: <Navigate to="/" replace />,
+      element: (
+        <Suspense fallback={<LoadingFallback />}>
+          <NotFound />
+        </Suspense>
+      ),
     },
   ]);
 

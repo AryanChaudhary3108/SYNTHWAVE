@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { supabase } from "../../supabase";
 import AboutUs from "../aboutus/AboutUs";
 import Subscriptions from "../subscription/Subscriptions";
@@ -26,12 +27,17 @@ const Home: React.FC = () => {
 
   return (
     <div className="app unified-body">
+      <Helmet>
+        <title>Synthwave Roleplay | Immersive GTA V Roleplay</title>
+        <meta name="description" content="Step into a world of endless possibilities, where creativity knows no bounds. Join our vibrant community to craft, share, and roleplay in a city built by imagination." />
+        <link rel="canonical" href="https://synthwave.in/" />
+      </Helmet>
       <div>
         <div className="header-section">
           <div className="hero-copy">
-            <div className="title">
+            <h1 className="title">
               Together, We Stand with <span className="title-accent">Synthwave</span>, Moving Toward <span className="title-highlight">Endless Possibilities</span>
-            </div>
+            </h1>
             <div className="description">
               Step into a world of endless possibilities, where creativity knows no bounds.
               Join our vibrant community to craft, share, and roleplay in a city built by imagination.

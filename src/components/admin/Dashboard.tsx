@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { AppShell, Burger, Group, Button, Text } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
@@ -68,11 +69,15 @@ const Dashboard: React.FC = () => {
       navbar={{ width: 300, breakpoint: 'sm', collapsed: { mobile: !opened } }}
       padding="md"
     >
+      <Helmet>
+        <title>Dashboard | Synthwave Roleplay</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <AppShell.Header style={{ backgroundColor: '#1A1B1E' }}>
         <Group h="100%" px="md" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <Group>
             {!isDesktop && <Burger opened={opened} onClick={toggle} size="sm" />}
-            <Text size="xl" c="#8685ef">
+            <Text component="h1" size="xl" c="#8685ef" style={{ margin: 0, fontWeight: 700 }}>
               Dashboard
             </Text>
           </Group>

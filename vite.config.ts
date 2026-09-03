@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'build',
-    sourcemap: true,
+    sourcemap: false,
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[ext]/[name]-[hash][extname]',

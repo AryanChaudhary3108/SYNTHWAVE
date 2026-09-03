@@ -153,7 +153,7 @@ const Header: React.FC = () => {
               <div className="dropdown-profile">
                 <div className="dropdown-avatar">
                   {avatarUrl ? (
-                    <img src={avatarUrl} alt="" />
+                    <img src={avatarUrl} alt="User profile avatar" />
                   ) : (
                     <span>{fullName.charAt(0).toUpperCase()}</span>
                   )}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import "./Rules.css";
 
@@ -58,6 +59,11 @@ const Rules: React.FC = () => {
 
   return (
     <div className="rules-container">
+      <Helmet>
+        <title>Server Rules | Synthwave Roleplay</title>
+        <meta name="description" content="Official server rules for Synthwave Roleplay. Please read carefully to ensure a fun and immersive experience for everyone." />
+        <link rel="canonical" href="https://synthwave.in/rules" />
+      </Helmet>
       <aside className="rules-sidebar">
         {rules.map((section, index) => (
           <a
@@ -72,6 +78,9 @@ const Rules: React.FC = () => {
       </aside>
       <main className="rules">
         <header className="rules-header">
+          <nav aria-label="breadcrumb" className="breadcrumb">
+            <a href="/">Home</a> &gt; <span>Rules</span>
+          </nav>
           <span className="rules-eyebrow">SYNTHWAVE ROLEPLAY</span>
           <h1>SERVER RULES</h1>
           <p className="rules-intro">Build a believable world together. Respect the story, respect the community, and keep every scene worth remembering.</p>

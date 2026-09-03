@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import { FaDiscord } from 'react-icons/fa';
 import { supabase } from "../../supabase";
@@ -49,6 +50,11 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-container">
+      <Helmet>
+        <title>Login | Synthwave Roleplay</title>
+        <meta name="description" content="Login with Discord to access your Synthwave Roleplay account." />
+        <link rel="canonical" href="https://synthwave.in/login" />
+      </Helmet>
       <div className="login-card">
         <img className="login-logo" src="/FEVICON.webp" alt="OneVision Synthwave" />
         <h1 className="welcome-title">WELCOME</h1>

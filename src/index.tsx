@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
@@ -14,9 +15,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MantineProvider defaultColorScheme="dark" theme={{ fontFamily: 'Tektur' }}>
-    <Notifications position='top-right' containerWidth={400}limit={4} autoClose={4000} zIndex={1000} />
-      <App />
-    </MantineProvider>
+    <HelmetProvider>
+      <MantineProvider defaultColorScheme="dark" theme={{ fontFamily: 'Tektur' }}>
+      <Notifications position='top-right' containerWidth={400}limit={4} autoClose={4000} zIndex={1000} />
+        <App />
+      </MantineProvider>
+    </HelmetProvider>
   </React.StrictMode>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import "./PrivacyPolicy.css";
 
@@ -10,6 +11,14 @@ const PrivacyPolicy: React.FC = () => {
 
   return (
     <div className="privacy-policy">
+      <Helmet>
+        <title>Privacy Policy | Synthwave Roleplay</title>
+        <meta name="description" content="Privacy Policy for Synthwave Roleplay. Learn how we collect, use, and protect your information." />
+        <link rel="canonical" href="https://synthwave.in/privacy" />
+      </Helmet>
+      <nav aria-label="breadcrumb" className="breadcrumb">
+        <a href="/">Home</a> &gt; <span>Privacy Policy</span>
+      </nav>
       <h1>Privacy Policy</h1>
       <p>
         Your privacy is important to us. This policy outlines how we collect, use, and protect your information.

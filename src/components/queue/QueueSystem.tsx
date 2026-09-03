@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '@mantine/core';
 import { Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -90,6 +91,11 @@ const QueueSystem: React.FC = () => {
 
   return (
     <div className="queue-container">
+      <Helmet>
+        <title>Server Queue | Synthwave Roleplay</title>
+        <meta name="description" content="Join the Synthwave Roleplay server queue and track your position in real-time." />
+        <link rel="canonical" href="https://synthwave.in/queue" />
+      </Helmet>
       <div className="queue-card"
         style={{
           background: getGradient() || '#121212',
