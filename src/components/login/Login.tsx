@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaDiscord } from 'react-icons/fa';
 import { supabase } from "../../supabase";
-import logoImage from '../../assets/logo.webp';
 import './Login.css';
 
 const Login: React.FC = () => {
@@ -50,8 +50,8 @@ const Login: React.FC = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <img className="login-logo" src={logoImage} alt="OneVision Synthwave" />
-        <h1>WELCOME BACK</h1>
+        <img className="login-logo" src="/FEVICON.png" alt="OneVision Synthwave" />
+        <h1 className="welcome-title">WELCOME</h1>
         <p className="login-intro">
           Sign in with your Discord account to access your Synthwave account.
         </p>
@@ -61,7 +61,7 @@ const Login: React.FC = () => {
           className="btn-login"
           disabled={loading}
         >
-          <span className="discord-mark" aria-hidden="true">D</span>
+          <span className="discord-mark" aria-hidden="true"><FaDiscord /></span>
           <span>{loading ? 'REDIRECTING...' : 'LOGIN WITH DISCORD'}</span>
         </button>
         <p className="login-note">
