@@ -22,15 +22,17 @@ const AboutUs: React.FC = () => {
           <div className="about-us-buttons">
             <Button
               variant="default"
+              className="about-action-button"
               style={{ fontWeight: '400' }}
               onClick={() => window.open('https://discord.gg/ygSGMfBFeS', '_blank')}>
-              Join Discord
+              JOIN DISCORD
             </Button>
             <Button
               variant="default"
+              className="about-action-button"
               style={{ fontWeight: '400' }}
               onClick={() => navigate('/rules')}>
-              Read Rules
+              READ RULES
             </Button>
           </div>
         </div>

@@ -19,13 +19,14 @@ body::before {
 }
 
 body::-webkit-scrollbar {
-  background-color: #242424;
-  width: 5px;
+  background-color: #090719;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #8685ef;
-  border-radius: 4px;
+  background: linear-gradient(180deg, #00b4d8, #7534b4);
+  border: 2px solid #090719;
+  border-radius: 8px;
 }
 
 .unified-body {
@@ -43,20 +44,38 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
 }
 
+.hero-copy {
+  width: min(60%, 700px);
+  margin-top: 72px;
+  z-index: 1;
+}
+
 .title {
-  font-size: 2.5em;
-  margin-bottom: 1rem;
-  max-width: 700px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0;
   text-transform: uppercase;
-  color: white;
+  color: #f7f8ff;
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.title-accent {
+  color: #00b4d8;
+  text-shadow: 0 0 18px rgba(0, 180, 216, 0.35);
+}
+
+.title-highlight {
+  color: #00b4d8;
+  text-shadow: 0 0 18px rgba(0, 180, 216, 0.35);
 }
 
 .description {
   font-size: 1em;
-  margin-top: -8rem;
-  color: #cacaca;
-  font-family: "Roboto";
+  margin: 18px 0 0;
+  color: #d3d6e2;
+  font-family: "Tektur";
   max-width: 500px;
+  line-height: 1.65;
 }
 
 .img-wrapper {
@@ -74,8 +93,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1024px) {
-  .description {
-    margin-top: -20rem;
+  .hero-copy {
+    width: 100%;
   }
 
   .img-right {

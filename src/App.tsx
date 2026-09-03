@@ -9,8 +9,8 @@ import Footer from "./components/footer/Footer";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Rules from "./components/pages/Rules";
 import Dashboard from "./components/admin/Dashboard";
-import Application from "./components/form/ApplicationForm";
-import Support from "./components/support/SupportTicket";
+// import Application from "./components/form/ApplicationForm";
+// import Support from "./components/support/SupportTicket";
 import Queue from "./components/queue/QueueSystem";
 
 const Layout: React.FC = () => (
@@ -110,6 +110,7 @@ const App: React.FC = () => {
         </PageTransition>
       ),
     },
+    /*
     {
       path: "/application",
       element: (
@@ -130,6 +131,7 @@ const App: React.FC = () => {
         </PageTransition>
       ),
     },
+    */
     {
       path: "*",
       element: <Navigate to="/" replace />,

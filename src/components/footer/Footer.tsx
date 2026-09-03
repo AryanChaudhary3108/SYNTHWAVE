@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaDiscord, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import logoImage from "../../assets/logo.webp";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
@@ -17,19 +15,9 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img
-            src={logoImage}
+            src="/FEVICON.png"
             alt="Synthwave Roleplay logo"
           />
-          <p className="business-inquiries">
-            <span className="inquiries-text">For Business Inquiries:</span>
-            <a
-              href="mailto:tanayapal37@gmail.com"
-              className="business-link"
-              onClick={handleCopyEmail}
-              aria-label="Copy email to clipboard">
-              tanayapal37@gmail.com
-            </a>
-          </p>
         </div>
         <div className="footer-links">
           <ul>
@@ -64,19 +52,9 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Discord"
               >
-                <FaDiscord /> Discord
+                <FaDiscord />
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://x.com/OneVision_RP"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter (X)"
-              >
-                <FaXTwitter /> X
-              </a>
-            </li> */}
             <li>
               <a
                 href="https://www.youtube.com/@SynthwaveRoleplay"
@@ -84,7 +62,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="YouTube"
               >
-                <FaYoutube /> YouTube
+                <FaYoutube />
               </a>
             </li>
           </ul>
@@ -92,6 +70,16 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="footer-copyright">
+        <p className="business-inquiries">
+          <span className="inquiries-text">For Business Inquiries:</span>
+          <a
+            href="mailto:tanayapal37@gmail.com"
+            className="business-link"
+            onClick={handleCopyEmail}
+            aria-label="Copy email to clipboard">
+            tanayapal37@gmail.com
+          </a>
+        </p>
         <p>&copy; {new Date().getFullYear()} Synthwave Roleplay. All rights reserved.</p>
       </div>
     </footer>

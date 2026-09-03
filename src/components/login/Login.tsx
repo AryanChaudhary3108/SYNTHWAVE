@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from "../../supabase";
+import logoImage from '../../assets/logo.webp';
 import './Login.css';
 
 const Login: React.FC = () => {
@@ -49,17 +50,25 @@ const Login: React.FC = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2>Authorize Your Discord Account</h2>
+        <img className="login-logo" src={logoImage} alt="OneVision Synthwave" />
+        <h1>WELCOME BACK</h1>
+        <p className="login-intro">
+          Sign in with your Discord account to access your Synthwave account.
+        </p>
         {error && <p className="error">{error}</p>}
         <button
           onClick={handleLogin}
           className="btn-login"
           disabled={loading}
         >
-          {loading ? 'Redirecting...' : 'Connect With Discord'}
+          <span className="discord-mark" aria-hidden="true">D</span>
+          <span>{loading ? 'REDIRECTING...' : 'LOGIN WITH DISCORD'}</span>
         </button>
+        <p className="login-note">
+          We only use Discord for authentication. Your account data stays private and secure.
+        </p>
         <button onClick={handleBack} className="btn-back">
-          Back
+          RETURN HOME
         </button>
       </div>
     </div>

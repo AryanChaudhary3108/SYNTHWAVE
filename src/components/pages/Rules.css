@@ -15,10 +15,10 @@
 
 .rules h1 {
   text-align: center;
-  font-family: "Doto";
-  color: #ff5555;
+  font-family: "Tektur";
+  color: #00b4d8;
   font-size: 3rem;
-  border-bottom: 2px solid #616161;
+  border-bottom: 1px solid rgba(0, 180, 216, 0.4);
   margin-bottom: 15px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .category-title {
-  font-family: "Doto";
+  font-family: "Tektur";
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 10px;
@@ -74,13 +74,14 @@
   font-size: 16px;
   text-align: right;
   color: white;
-  border: 0;
-  background-color: #212121;
-  border-radius: 5px;
+  border: 1px solid #00b4d8;
+  background-color: rgba(0, 180, 216, 0.08);
+  border-radius: 0;
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .rules-buttons button:hover {
-  background-color: #8685ef;
+  background-color: rgba(117, 52, 180, 0.3);
 }

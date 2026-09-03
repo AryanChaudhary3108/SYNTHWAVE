@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MantineProvider defaultColorScheme="dark" theme={{ fontFamily: 'Oswald' }}>
+    <MantineProvider defaultColorScheme="dark" theme={{ fontFamily: 'Tektur' }}>
     <Notifications position='top-right' containerWidth={400}limit={4} autoClose={4000} zIndex={1000} />
       <App />
     </MantineProvider>

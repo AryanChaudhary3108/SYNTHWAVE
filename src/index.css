@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700;800&display=swap');
+
 @font-face {
   font-family: 'Oswald';
   src: url('fonts/Trinetra.ttf');
@@ -19,6 +21,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  font-family: 'Tektur', sans-serif;
+}
 
 @layer base {
   :root {
@@ -52,7 +60,7 @@
 
 body {
   margin: 0;
-  font-family: 'Oswald';
+  font-family: 'Tektur', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -60,13 +68,14 @@ body {
 }
 
 body::-webkit-scrollbar {
-  background-color: #242424;
-  width: 5px;
+  background-color: #090719;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #8685ef;
-  border-radius: 4px;
+  background: linear-gradient(180deg, #00b4d8, #7534b4);
+  border: 2px solid #090719;
+  border-radius: 8px;
 }
 
 code {

@@ -29,8 +29,15 @@ const Home: React.FC = () => {
     <div className="app unified-body">
       <div>
         <div className="header-section">
-          <div className="title">
-            Together, We Stand with Synthwave, Moving Toward Endless Possibilities
+          <div className="hero-copy">
+            <div className="title">
+              Together, We Stand with <span className="title-accent">Synthwave</span>, Moving Toward <span className="title-highlight">Endless Possibilities</span>
+            </div>
+            <div className="description">
+              Step into a world of endless possibilities, where creativity knows no bounds.
+              Join our vibrant community to craft, share, and roleplay in a city built by imagination.
+              Your adventure begins here!
+            </div>
           </div>
           <div className="img-wrapper">
             <img
@@ -39,11 +46,6 @@ const Home: React.FC = () => {
               alt="City skyline representing endless possibilities"
             />
           </div>
-        </div>
-        <div className="description">
-          Step into a world of endless possibilities, where creativity knows no bounds.
-          Join our vibrant community to craft, share, and roleplay in a city built by imagination.
-          Your adventure begins here!
         </div>
       </div>
       <AboutUs />

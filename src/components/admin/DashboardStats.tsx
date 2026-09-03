@@ -13,6 +13,7 @@ const DashboardStats: React.FC = () => {
     data: number[];
   }
 
+  /* Applications and ticket metrics are temporarily disabled.
   const [metrics, setMetrics] = useState<Metric[]>([
     {
       title: 'Applications',
@@ -104,9 +105,11 @@ const DashboardStats: React.FC = () => {
 
     fetchMetrics();
   }, []);
+  */
 
   return (
     <SimpleGrid cols={2} spacing="lg">
+      {/*
       {metrics.map((metric) => (
         <StatCard
           key={metric.title}
@@ -118,6 +121,7 @@ const DashboardStats: React.FC = () => {
           data={metric.data}
         />
       ))}
+      */}
     </SimpleGrid>
   );
 }

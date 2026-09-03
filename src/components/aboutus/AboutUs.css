@@ -19,7 +19,11 @@
 
 .about-us-title {
   font-size: 5rem;
-  color: #8685ef;
+  color: #ff4f81;
+  background: linear-gradient(180deg, #ffad4a 0%, #ff2f78 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   white-space: nowrap;
   text-overflow: hidden;
@@ -28,7 +32,7 @@
 .about-us-description {
   font-size: 1rem;
   color: #cacaca;
-  font-family: "Roboto";
+  font-family: "Tektur";
   text-overflow: hidden;
   max-width: 25vw;
 }
@@ -37,6 +41,40 @@
   display: flex;
   margin-top: 2vh;
   gap: 10px;
+}
+
+.about-action-button {
+  min-width: 168px;
+  height: 52px;
+  padding: 0 28px;
+  border: 1px solid #00b4d8 !important;
+  border-radius: 0 !important;
+  color: #f4f4f7 !important;
+  background: rgba(0, 180, 216, 0.12) !important;
+  font-family: "Tektur", sans-serif !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px;
+  clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.about-action-button:hover {
+  border-color: #00b4d8 !important;
+  background: rgba(0, 180, 216, 0.25) !important;
+  box-shadow: 0 0 18px rgba(0, 180, 216, 0.25);
+  transform: translateY(-1px);
+}
+
+.about-action-button:nth-child(2) {
+  border-color: #9b5de5 !important;
+  background: rgba(117, 52, 180, 0.16) !important;
+}
+
+.about-action-button:nth-child(2):hover {
+  border-color: #c084fc !important;
+  background: rgba(117, 52, 180, 0.3) !important;
+  box-shadow: 0 0 18px rgba(117, 52, 180, 0.28);
 }
 
 .about-us-image {

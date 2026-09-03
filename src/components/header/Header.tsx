@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../supabase';
-import { Divider } from '@mantine/core';
-import logoImage from '../../assets/logo.webp';
-import logoGif from '../../assets/logogif.webp';
+import { Grid2X2, LogOut } from 'lucide-react';
 import './Header.css';
 
 type Admin = {
@@ -14,6 +12,7 @@ const Header: React.FC = () => {
   const [user, setUser] = useState<any>(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [admins, setAdmins] = useState<string[]>([]);
+  const profileContainerRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -47,6 +46,31 @@ const Header: React.FC = () => {
     if (user) fetchAdmins();
   }, [user]);
 
+  useEffect(() => {
+    if (!dropdownOpen) return;
+
+    const handleOutsideClick = (event: PointerEvent) => {
+      if (
+        profileContainerRef.current &&
+        !profileContainerRef.current.contains(event.target as Node)
+      ) {
+        setDropdownOpen(false);
+      }
+    };
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setDropdownOpen(false);
+    };
+
+    document.addEventListener('pointerdown', handleOutsideClick);
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('pointerdown', handleOutsideClick);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [dropdownOpen]);
+
   const handleLoginClick = () => navigate('/login');
 
   const handleLogoutClick = async () => {
@@ -60,10 +84,7 @@ const Header: React.FC = () => {
     setDropdownOpen(false);
   };
 
-  const handleSupportClick = () => {
-    navigate('/support');
-    setDropdownOpen(false);
-  };
+  // Applications and Tickets are temporarily disabled across the website.
 
   const handleConnectClick = () => {
     const connectUrl = "fivem://connect/117.242.46.44";
@@ -90,19 +111,16 @@ const Header: React.FC = () => {
   );
   const { user_metadata } = user || {};
   const avatarUrl = user_metadata?.avatar_url;
-  const fullName = user_metadata?.full_name || user?.email;
+  const fullName = user_metadata?.full_name || 'PLAYER';
 
   return (
     <header className="header">
       <div className="logo">
-        <img src={logoImage} alt="Synthwave Roleplay logo" />
+        <img src="/FEVICON.png" alt="Synthwave Roleplay logo" />
 
       </div>
-      <div className="center-logo">
-        <img src={logoGif} alt="Logo" />
-      </div>
       {user ? (
-        <div className="profile-container">
+        <div className="profile-container" ref={profileContainerRef}>
           <button className="connect-button" onClick={handleConnectClick}>
             JOIN SYNTHWAVE
           </button>
@@ -118,20 +136,40 @@ const Header: React.FC = () => {
           </div>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <div className="dropdown-item username">
-                {fullName ? toPascalCase(fullName) : ''}
+              <div className="dropdown-profile">
+                <div className="dropdown-avatar">
+                  {avatarUrl ? (
+                    <img src={avatarUrl} alt="" />
+                  ) : (
+                    <span>{fullName.charAt(0).toUpperCase()}</span>
+                  )}
+                </div>
+                <div className="dropdown-identity">
+                  <strong>{toPascalCase(fullName)}</strong>
+                  <span>SYNTHWAVE MEMBER</span>
+                </div>
               </div>
+              <div className="dropdown-divider" />
               {isAdmin && (
-                <div className="dropdown-item" onClick={handleDashboardClick}>
-                  Dashboard
+                <div className="dropdown-item active" onClick={handleDashboardClick}>
+                  <Grid2X2 size={19} strokeWidth={1.8} />
+                  <span>DASHBOARD</span>
                 </div>
               )}
-              <div className="dropdown-item" onClick={handleSupportClick}>
-                Support
+              {/*
+              <div className="dropdown-item" onClick={handleApplicationClick}>
+                <FileText size={20} strokeWidth={1.8} />
+                <span>APPLICATIONS</span>
               </div>
-              <Divider color="#444444" style={{ margin: '8px 0' }} />
-              <div className="dropdown-item" onClick={handleLogoutClick}>
-                Logout
+              <div className="dropdown-item" onClick={handleSupportClick}>
+                <MessageSquare size={20} strokeWidth={1.8} />
+                <span>TICKETS</span>
+              </div>
+              */}
+              <div className="dropdown-divider" />
+              <div className="dropdown-item sign-out" onClick={handleLogoutClick}>
+                <LogOut size={20} strokeWidth={1.8} />
+                <span>SIGN OUT</span>
               </div>
             </div>
           )}

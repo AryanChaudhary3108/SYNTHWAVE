@@ -3,9 +3,9 @@ import { AppShell, Burger, Group, Button, Text } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { supabase } from '../../supabase';
-import { FaHome, FaClipboardList, FaLifeRing, FaUserShield } from 'react-icons/fa';
-import Applications from './Applications';
-import SupportTickets from './SupportTickets';
+import { FaHome, FaUserShield } from 'react-icons/fa';
+// import Applications from './Applications';
+// import SupportTickets from './SupportTickets';
 import AdminActions from './AdminActions';
 import DashboardStats from './DashboardStats';
 
@@ -48,8 +48,10 @@ const Dashboard: React.FC = () => {
 
   const allTabs = [
     { key: 'dashboard', label: 'Home', component: <DashboardStats />, icon: <FaHome /> },
+    /*
     { key: 'applications', label: 'Applications', component: <Applications />, icon: <FaClipboardList /> },
     { key: 'support', label: 'Support Tickets', component: <SupportTickets />, icon: <FaLifeRing /> },
+    */
     { key: 'adminactions', label: 'Admin Actions', component: <AdminActions />, roles: ['admin'], icon: <FaUserShield /> },
   ];
 
