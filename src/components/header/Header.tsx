@@ -66,7 +66,7 @@ const Header: React.FC = () => {
   };
 
   const handleConnectClick = () => {
-    const connectUrl = "fivem://connect/play.ovrp.in";
+    const connectUrl = "fivem://connect/117.242.46.44";
     window.location.href = connectUrl;
   };
 
