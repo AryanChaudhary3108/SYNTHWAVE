@@ -104,8 +104,7 @@ const Header: React.FC = () => {
       {user ? (
         <div className="profile-container">
           <button className="connect-button" onClick={handleConnectClick}>
-            Connect
-            <span className="ping-effect"></span>
+            JOIN SYNTHWAVE
           </button>
           <div className="avatar"
             onClick={toggleDropdown}
