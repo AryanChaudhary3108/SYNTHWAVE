@@ -1,9 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #1a1a2e; /* Fallback color */
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
   background: url("../../assets/background.png") no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  filter: blur(10px) brightness(0.6);
+  z-index: -1;
 }
 
 body::-webkit-scrollbar {
