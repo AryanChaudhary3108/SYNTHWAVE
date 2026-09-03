@@ -42,8 +42,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  min-height: 75vh;
-  margin-top: 40px;
+  min-height: 70vh;
+  margin-top: 10px;
 }
 
 .hero-copy {
