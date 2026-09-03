@@ -38,6 +38,14 @@ const Subscriptions: React.FC = () => {
         Pick your membership and unlock countless benefits to explore the city!
       </div>
 
+      <div className="coming-soon-container">
+        <span className="coming-soon-badge">COMING SOON</span>
+        <p className="coming-soon-text">
+          Membership plans are being revamped. Stay tuned for something amazing!
+        </p>
+      </div>
+
+      {/* Membership cards temporarily disabled
       <Carousel
         slideSize={slideSize}
         slideGap={{ base: 0, sm: 'md' }}
@@ -70,6 +78,7 @@ const Subscriptions: React.FC = () => {
           </Carousel.Slide>
         ))}
       </Carousel>
+      */}
     </div>
   );
 };
