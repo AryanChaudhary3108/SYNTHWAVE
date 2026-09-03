@@ -87,8 +87,7 @@ const Header: React.FC = () => {
   // Applications and Tickets are temporarily disabled across the website.
 
   const handleConnectClick = () => {
-    const connectUrl = "fivem://connect/117.242.46.44";
-    window.location.href = connectUrl;
+    navigate('/queue');
   };
 
   const toggleDropdown = () => {
@@ -113,9 +112,14 @@ const Header: React.FC = () => {
   const avatarUrl = user_metadata?.avatar_url;
   const fullName = user_metadata?.full_name || 'PLAYER';
 
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className="header">
-      <button className="logo" onClick={() => navigate('/')} aria-label="Go to home page">
+      <button className="logo" onClick={handleLogoClick} aria-label="Go to home page">
         <img src="/FEVICON.webp" alt="Synthwave Roleplay logo" />
       </button>
       <nav className="navigation" aria-label="Primary navigation">
