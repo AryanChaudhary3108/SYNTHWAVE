@@ -1,0 +1,527 @@
+{
+  "communities": {
+    "0": [
+      "src_app",
+      "src_app_app",
+      "src_app_layout",
+      "src_app_pagetransition",
+      "src_app_pagevariants",
+      "src_app_protectedroute",
+      "src_components_admin_dashboard_dashboard",
+      "src_components_footer_footer",
+      "src_components_footer_footer_footer",
+      "src_components_form_applicationform",
+      "src_components_form_applicationform_applicationform",
+      "src_components_header_header",
+      "src_components_header_header_admin",
+      "src_components_header_header_header",
+      "src_components_login_login",
+      "src_components_login_login_login",
+      "src_components_pages_privacypolicy",
+      "src_components_pages_privacypolicy_privacypolicy",
+      "src_components_pages_rules",
+      "src_components_pages_rules_rules",
+      "src_components_queue_queuesystem",
+      "src_components_queue_queuesystem_queuestate",
+      "src_components_queue_queuesystem_queuesystem",
+      "src_components_queue_queuesystem_queuetype",
+      "src_components_support_supportticket",
+      "src_components_support_supportticket_categories",
+      "src_components_support_supportticket_supportticket",
+      "src_components_support_supportticket_ticket",
+      "src_index",
+      "src_index_root"
+    ],
+    "1": [
+      "ref_dist",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_esnext",
+      "ref_node_modules",
+      "ref_src",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "2": [
+      "autoprefixer",
+      "package",
+      "package_browserslist",
+      "package_browserslist_development",
+      "package_browserslist_production",
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_json_tailwindcss",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview",
+      "package_type",
+      "package_version",
+      "postcss",
+      "ref_0_2",
+      "ref_last_1_chrome_version",
+      "ref_last_1_firefox_version",
+      "ref_last_1_safari_version",
+      "ref_not_dead",
+      "ref_not_op_mini_all"
+    ],
+    "3": [
+      "src_components_admin_adminactions",
+      "src_components_admin_adminactions_admin",
+      "src_components_admin_adminactions_adminactions",
+      "src_components_admin_adminactions_adminrole",
+      "src_components_admin_adminactions_feature",
+      "src_components_admin_adminactions_featurekeys",
+      "src_components_admin_applications",
+      "src_components_admin_applications_application",
+      "src_components_admin_applications_applications",
+      "src_components_admin_dashboard",
+      "src_components_admin_dashboardstats",
+      "src_components_admin_dashboardstats_dashboardstats",
+      "src_components_admin_supporttickets",
+      "src_components_admin_supporttickets_supportticket",
+      "src_components_admin_supporttickets_supporttickets",
+      "src_components_ui_statcard",
+      "src_components_ui_statcard_statcard",
+      "src_components_ui_statcard_statcardprops",
+      "src_supabase",
+      "src_supabase_supabase"
+    ],
+    "4": [
+      "components",
+      "components_aliases",
+      "components_aliases_components",
+      "components_aliases_hooks",
+      "components_aliases_lib",
+      "components_aliases_ui",
+      "components_aliases_utils",
+      "components_iconlibrary",
+      "components_rsc",
+      "components_schema",
+      "components_style",
+      "components_tailwind",
+      "components_tailwind_basecolor",
+      "components_tailwind_config",
+      "components_tailwind_css",
+      "components_tailwind_cssvariables",
+      "components_tailwind_prefix",
+      "components_tsx"
+    ],
+    "5": [
+      "src_hooks_use_toast",
+      "src_hooks_use_toast_action",
+      "src_hooks_use_toast_actiontype",
+      "src_hooks_use_toast_actiontypes",
+      "src_hooks_use_toast_addtoremovequeue",
+      "src_hooks_use_toast_dispatch",
+      "src_hooks_use_toast_genid",
+      "src_hooks_use_toast_listeners",
+      "src_hooks_use_toast_memorystate",
+      "src_hooks_use_toast_reducer",
+      "src_hooks_use_toast_state",
+      "src_hooks_use_toast_toast",
+      "src_hooks_use_toast_toastertoast",
+      "src_hooks_use_toast_toasttimeouts",
+      "src_hooks_use_toast_usetoast"
+    ],
+    "6": [
+      "src_react_app_env_d",
+      "src_react_app_env_d_avif",
+      "src_react_app_env_d_bmp",
+      "src_react_app_env_d_gif",
+      "src_react_app_env_d_jpeg",
+      "src_react_app_env_d_jpg",
+      "src_react_app_env_d_module_css",
+      "src_react_app_env_d_module_sass",
+      "src_react_app_env_d_module_scss",
+      "src_react_app_env_d_nodejs",
+      "src_react_app_env_d_png",
+      "src_react_app_env_d_processenv",
+      "src_react_app_env_d_svg",
+      "src_react_app_env_d_webp"
+    ],
+    "7": [
+      "src_components_lib_utils",
+      "src_components_lib_utils_cn",
+      "src_components_ui_button",
+      "src_components_ui_button_button",
+      "src_components_ui_button_buttonprops",
+      "src_components_ui_button_buttonvariants",
+      "src_components_ui_card",
+      "src_components_ui_card_card",
+      "src_components_ui_card_cardcontent",
+      "src_components_ui_card_carddescription",
+      "src_components_ui_card_cardfooter",
+      "src_components_ui_card_cardheader",
+      "src_components_ui_card_cardtitle"
+    ],
+    "8": [
+      "class_variance_authority",
+      "dayjs",
+      "mantine_carousel",
+      "package_dependencies",
+      "package_dependencies_class_variance_authority",
+      "package_dependencies_dayjs",
+      "package_dependencies_mantine_carousel",
+      "package_dependencies_testing_library_react",
+      "package_dependencies_testing_library_user_event",
+      "testing_library_react",
+      "testing_library_user_event"
+    ],
+    "9": [
+      "src_components_aboutus_aboutus",
+      "src_components_aboutus_aboutus_aboutus",
+      "src_components_home_home",
+      "src_components_home_home_home",
+      "src_components_jobapp_jobapplication",
+      "src_components_jobapp_jobapplication_jobapplication",
+      "src_components_subscription_subscriptions",
+      "src_components_subscription_subscriptions_subscriptions",
+      "src_components_whitelist_whitelist",
+      "src_components_whitelist_whitelist_whitelist"
+    ],
+    "10": [
+      "clsx",
+      "package_dependencies_clsx"
+    ],
+    "11": [
+      "embla_carousel_react",
+      "package_dependencies_embla_carousel_react"
+    ],
+    "12": [
+      "fortawesome_fontawesome_svg_core",
+      "package_dependencies_fortawesome_fontawesome_svg_core"
+    ],
+    "13": [
+      "framer_motion",
+      "package_dependencies_framer_motion"
+    ],
+    "14": [
+      "lucide_react",
+      "package_dependencies_lucide_react"
+    ],
+    "15": [
+      "mantine_charts",
+      "package_dependencies_mantine_charts"
+    ],
+    "16": [
+      "mantine_core",
+      "package_dependencies_mantine_core"
+    ],
+    "17": [
+      "mantine_dropzone",
+      "package_dependencies_mantine_dropzone"
+    ],
+    "18": [
+      "mantine_hooks",
+      "package_dependencies_mantine_hooks"
+    ],
+    "19": [
+      "mantine_notifications",
+      "package_dependencies_mantine_notifications"
+    ],
+    "20": [
+      "mantine_tiptap",
+      "package_dependencies_mantine_tiptap"
+    ],
+    "21": [
+      "motion",
+      "package_dependencies_motion"
+    ],
+    "22": [
+      "next",
+      "package_dependencies_next"
+    ],
+    "23": [
+      "package_dependencies_radix_ui_react_slot",
+      "radix_ui_react_slot"
+    ],
+    "24": [
+      "package_dependencies_react",
+      "react"
+    ],
+    "25": [
+      "package_dependencies_react_dom",
+      "react_dom"
+    ],
+    "26": [
+      "package_dependencies_react_icons",
+      "react_icons"
+    ],
+    "27": [
+      "package_dependencies_react_router_dom",
+      "react_router_dom"
+    ],
+    "28": [
+      "package_dependencies_recharts",
+      "recharts"
+    ],
+    "29": [
+      "package_dependencies_supabase_auth_ui_react",
+      "supabase_auth_ui_react"
+    ],
+    "30": [
+      "package_dependencies_supabase_supabase_js",
+      "supabase_supabase_js"
+    ],
+    "31": [
+      "package_dependencies_tabler_icons",
+      "tabler_icons"
+    ],
+    "32": [
+      "package_dependencies_tabler_icons_react",
+      "tabler_icons_react"
+    ],
+    "33": [
+      "package_dependencies_tailwind_merge",
+      "tailwind_merge"
+    ],
+    "34": [
+      "package_dependencies_tailwindcss_animate",
+      "tailwindcss_animate"
+    ],
+    "35": [
+      "package_dependencies_tailwindcss_forms",
+      "tailwindcss_forms"
+    ],
+    "36": [
+      "package_dependencies_testing_library_jest_dom",
+      "testing_library_jest_dom"
+    ],
+    "37": [
+      "package_dependencies_types_jest",
+      "types_jest"
+    ],
+    "38": [
+      "package_dependencies_types_node",
+      "types_node"
+    ],
+    "39": [
+      "package_dependencies_types_react",
+      "types_react"
+    ],
+    "40": [
+      "package_dependencies_types_react_dom",
+      "types_react_dom"
+    ],
+    "41": [
+      "package_dependencies_typescript",
+      "typescript"
+    ],
+    "42": [
+      "package_dependencies_vite",
+      "vite"
+    ],
+    "43": [
+      "package_dependencies_vitejs_plugin_react",
+      "vitejs_plugin_react"
+    ],
+    "44": [
+      "src_components_hooks_use_mobile",
+      "src_components_hooks_use_mobile_useismobile"
+    ],
+    "45": [
+      "next_config"
+    ],
+    "46": [
+      "src_setuptests"
+    ],
+    "47": [
+      "tailwind_config"
+    ],
+    "48": [
+      "tailwindcss_tailwindcss"
+    ],
+    "49": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08735632183908046,
+    "1": 0.07407407407407407,
+    "2": 0.08,
+    "3": 0.1736842105263158,
+    "4": 0.1111111111111111,
+    "5": 0.19047619047619047,
+    "6": 0.14285714285714285,
+    "7": 0.28205128205128205,
+    "8": 0.18181818181818182,
+    "9": 0.28888888888888886,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "src_supabase_supabase",
+      "label": "supabase",
+      "degree": 13
+    },
+    {
+      "id": "src_components_lib_utils_cn",
+      "label": "cn()",
+      "degree": 10
+    },
+    {
+      "id": "components_tailwind",
+      "label": "tailwind",
+      "degree": 6
+    },
+    {
+      "id": "components_aliases",
+      "label": "aliases",
+      "degree": 6
+    },
+    {
+      "id": "src_hooks_use_toast_dispatch",
+      "label": "dispatch()",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 4
+    },
+    {
+      "id": "package_browserslist_production",
+      "label": "production",
+      "degree": 4
+    },
+    {
+      "id": "package_browserslist_development",
+      "label": "development",
+      "degree": 4
+    },
+    {
+      "id": "tsconfig_compileroptions_lib",
+      "label": "lib",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Card",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/card.tsx",
+        "src/components/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `Card` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "CardContent",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/card.tsx",
+        "src/components/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `CardContent` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "CardDescription",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/card.tsx",
+        "src/components/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `CardDescription` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "CardFooter",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/card.tsx",
+        "src/components/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `CardFooter` unexpectedly reaches hub `cn()`"
+    },
+    {
+      "source": "CardHeader",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/card.tsx",
+        "src/components/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `CardHeader` unexpectedly reaches hub `cn()`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

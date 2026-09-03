@@ -30,7 +30,7 @@ const Home: React.FC = () => {
       <div>
         <div className="header-section">
           <div className="title">
-            Together, We Stand with One Vision, Moving Toward Endless Possibilities
+            Together, We Stand with Synthwave, Moving Toward Endless Possibilities
           </div>
           <div className="img-wrapper">
             <img
@@ -48,8 +48,8 @@ const Home: React.FC = () => {
       </div>
       <AboutUs />
       <Subscriptions />
-      {user && <Whitelist />}
-      <JobApplication />
+      {/* {user && <Whitelist />} */}
+      {/* <JobApplication /> */}
     </div>
   );
 };

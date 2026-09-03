@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
         <div className="about-us-text">
           <h2 className="about-us-title">About Us</h2>
           <p className="about-us-description">
-            Welcome to the One Vision Roleplay! Get ready for an exciting adventure
+            Welcome to the Synthwave Roleplay! Get ready for an exciting adventure
             filled with chaos and fun. Join us as we dive into thrilling scenarios,
             unpredictable events, and epic character stories. Whether you're a seasoned
             roleplayer or new to the scene, there’s something for everyone. Stay tuned

@@ -289,7 +289,7 @@ const ApplicationForm: React.FC = () => {
 					<div className="info-message">
 						<span className="label">Your Application Has Been </span>
 						<span className="status accepted">Accepted</span>
-						<span className="label">. Welcome To The OneVision Roleplay!</span>
+						<span className="label">. Welcome To The Synthwave Roleplay!</span>
 					</div>
 				)}
 				<button type="button" onClick={handleGoBack} className="form-button">

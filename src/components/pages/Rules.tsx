@@ -19,7 +19,7 @@ const Rules: React.FC = () => {
         { title: "1.4 No Toxic or Offensive Roleplay", description: "Avoid any roleplay involving racism, sexism, or hate speech. Keep interactions inclusive and respectful to all." },
         { title: "1.5 No Forced Romance or Sexual Content", description: "Avoid forcing romantic or suggestive situations on others. Obtain consent before engaging in any intimate roleplay." },
         { title: "1.6 Keep Personal Issues Out of Roleplay", description: "Avoid bringing real-life issues or conflicts into the roleplay environment. Address personal concerns in private with staff if needed." },
-        { title: "1.7 No Advertising Other Servers", description: "Refrain from discussing or promoting other RP servers. Respect the exclusivity of Onevision Roleplay." }
+        { title: "1.7 No Advertising Other Servers", description: "Refrain from discussing or promoting other RP servers. Respect the exclusivity of Synthwave Roleplay." }
       ]
     },
     {

@@ -95,8 +95,8 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logoImage} alt="One Vision Roleplay logo" />
-        <span className="logo-text">#OneHeartOneCity</span>
+        <img src={logoImage} alt="Synthwave Roleplay logo" />
+        <span className="logo-text">#SynthwaveRP</span>
       </div>
       <div className="center-logo">
         <img src={logoGif} alt="Logo" />

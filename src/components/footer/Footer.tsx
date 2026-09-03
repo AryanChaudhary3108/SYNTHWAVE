@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         <div className="footer-logo">
           <img
             src={logoImage}
-            alt="One Vision Roleplay logo, featuring a stylized icon"
+            alt="Synthwave Roleplay logo"
           />
           <p className="business-inquiries">
             <span className="inquiries-text">For Business Inquiries:</span>
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="footer-copyright">
-        <p>&copy; {new Date().getFullYear()} OneVision Roleplay. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Synthwave Roleplay. All rights reserved.</p>
       </div>
     </footer>
   );
