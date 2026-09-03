@@ -42,11 +42,12 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
+  min-height: 75vh;
+  margin-top: 40px;
 }
 
 .hero-copy {
   width: min(60%, 700px);
-  margin-top: 72px;
   z-index: 1;
 }
 
@@ -81,7 +82,6 @@ body::-webkit-scrollbar-thumb {
 .img-wrapper {
   width: 30%;
   height: 300px;
-  margin-top: 6%;
   display: flex;
 }
 
