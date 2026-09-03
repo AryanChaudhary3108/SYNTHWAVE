@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   const navigate = useNavigate();
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("onevisionroleplayy@gmail.com");
+    navigator.clipboard.writeText("tanayapal37@gmail.com");
   };
 
   return (
@@ -23,11 +23,11 @@ const Footer: React.FC = () => {
           <p className="business-inquiries">
             <span className="inquiries-text">For Business Inquiries:</span>
             <a
-              href="mailto:onevisionroleplayy@gmail.com"
+              href="mailto:tanayapal37@gmail.com"
               className="business-link"
               onClick={handleCopyEmail}
               aria-label="Copy email to clipboard">
-              onevisionroleplayy@gmail.com
+              tanayapal37@gmail.com
             </a>
           </p>
         </div>
