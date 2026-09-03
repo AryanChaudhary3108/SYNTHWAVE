@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
             <Button
               variant="default"
               style={{ fontWeight: '400' }}
-              onClick={() => window.open('https://discord.com/invite/onevision', '_blank')}>
+              onClick={() => window.open('https://discord.gg/ygSGMfBFeS', '_blank')}>
               Join Discord
             </Button>
             <Button

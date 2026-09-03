@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           <ul>
             <li>
               <a
-                href="https://discord.gg/onevision"
+                href="https://discord.gg/ygSGMfBFeS"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Discord"

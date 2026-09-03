@@ -24,7 +24,7 @@ const PrivacyPolicy: React.FC = () => {
         We use your data to improve our services, communicate with you, and ensure a safe experience.
       </p>
       <p>
-        For questions, please <a href="https://discord.gg/onevision">contact us</a>.
+        For questions, please <a href="https://discord.gg/ygSGMfBFeS">contact us</a>.
       </p>
       <div className="navigation-buttons">
         <button onClick={handleGoBack}>Go Back</button>
