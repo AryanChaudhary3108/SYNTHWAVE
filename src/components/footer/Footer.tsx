@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                href="https://www.youtube.com/@onevisionrp"
+                href="https://www.youtube.com/@SynthwaveRoleplay"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
