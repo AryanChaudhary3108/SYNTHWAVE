@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                 <FaDiscord /> Discord
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://x.com/OneVision_RP"
                 target="_blank"
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               >
                 <FaXTwitter /> X
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://www.youtube.com/@SynthwaveRoleplay"
