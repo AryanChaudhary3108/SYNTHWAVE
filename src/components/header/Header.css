@@ -32,55 +32,16 @@
   animation: pulse 1.5s ease-in-out infinite;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+.center-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-.nav-item {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.nav-item:hover {
-  color: #00b4d8;
-}
-
-.watch-live-btn {
-  background-color: transparent;
-  color: #00b4d8;
-  border: 1px solid #333;
-  border-radius: 20px;
-  padding: 8px 18px;
-  font-weight: 700;
-  font-size: 13px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: 10px;
-  transition: border-color 0.3s;
-}
-
-.watch-live-btn:hover {
-  border-color: #00b4d8;
-}
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #00b4d8;
-  border-radius: 50%;
-  box-shadow: 0 0 5px #00b4d8;
+.center-logo img {
+  height: 80px;
 }
 
 .login-btn {
@@ -250,7 +211,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .header-nav {
+  .center-logo {
     display: none;
   }
   .connect-button {

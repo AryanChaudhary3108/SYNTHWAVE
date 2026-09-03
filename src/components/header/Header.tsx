@@ -98,16 +98,9 @@ const Header: React.FC = () => {
         <img src={logoImage} alt="Synthwave Roleplay logo" />
 
       </div>
-      <nav className="header-nav">
-        <a href="/" className="nav-item">HOME</a>
-        <a href="/queue" className="nav-item">QUEUE</a>
-        <a href="/rules" className="nav-item">RULES</a>
-        <a href="https://store.ovrp.in" target="_blank" rel="noopener noreferrer" className="nav-item">STORE</a>
-        <a href="/team" className="nav-item">TEAM</a>
-        <button className="watch-live-btn" onClick={() => window.open('https://twitch.tv', '_blank')}>
-          <span className="live-dot"></span> WATCH LIVE
-        </button>
-      </nav>
+      <div className="center-logo">
+        <img src={logoGif} alt="Logo" />
+      </div>
       {user ? (
         <div className="profile-container">
           <button className="connect-button" onClick={handleConnectClick}>
