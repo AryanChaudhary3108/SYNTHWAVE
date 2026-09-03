@@ -90,3 +90,30 @@ code {
     @apply bg-background text-foreground;
   }
 }
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-family: 'Tektur', sans-serif;
+  color: #6d7785;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.breadcrumb a {
+  color: #00b4d8;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #ff28be;
+  text-shadow: 0 0 10px rgba(255, 40, 190, 0.5);
+}
+
+.breadcrumb span {
+  color: #ff4f81;
+}

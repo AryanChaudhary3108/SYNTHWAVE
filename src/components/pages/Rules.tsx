@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import "./Rules.css";
@@ -10,6 +10,30 @@ const Rules: React.FC = () => {
   const handleGoBack = () => {
     navigate("/");
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const index = parseInt(id.split("-")[1], 10);
+            if (!isNaN(index)) {
+              setSelectedSection(index);
+            }
+          }
+        });
+      },
+      { rootMargin: "-20% 0px -60% 0px" }
+    );
+
+    const sections = document.querySelectorAll(".rules-section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   const rules = [
     {
