@@ -94,7 +94,13 @@ const App: React.FC = () => {
     },
     {
       path: "/rules",
-      element: <PageTransition><Rules /></PageTransition>,
+      element: (
+        <PageTransition>
+          <Header />
+          <Rules />
+          <Footer />
+        </PageTransition>
+      ),
     },
     {
       path: "/queue",

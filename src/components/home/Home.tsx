@@ -4,7 +4,6 @@ import AboutUs from "../aboutus/AboutUs";
 import Subscriptions from "../subscription/Subscriptions";
 import Whitelist from "../whitelist/Whitelist";
 import JobApplication from "../jobapp/JobApplication";
-import mainImage from "../../assets/main.webp";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -41,9 +40,9 @@ const Home: React.FC = () => {
           </div>
           <div className="img-wrapper">
             <img
-              src={mainImage}
+              src="/stick.png"
               className="img-right"
-              alt="City skyline representing endless possibilities"
+              alt="Synthwave Roleplay emblem"
             />
           </div>
         </div>

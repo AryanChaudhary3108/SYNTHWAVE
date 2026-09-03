@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Rules.css";
 
 const Rules: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedSection, setSelectedSection] = useState(0);
 
   const handleGoBack = () => {
     navigate("/");
@@ -57,27 +58,41 @@ const Rules: React.FC = () => {
 
   return (
     <div className="rules-container">
-      <div className="rules">
-        <header>
-          <h1>Server Rules</h1>
+      <aside className="rules-sidebar">
+        {rules.map((section, index) => (
+          <a
+            key={section.category}
+            className={index === selectedSection ? "active" : ""}
+            href={`#rules-${index}`}
+            onClick={() => setSelectedSection(index)}
+          >
+            {section.category}
+          </a>
+        ))}
+      </aside>
+      <main className="rules">
+        <header className="rules-header">
+          <span className="rules-eyebrow">SYNTHWAVE ROLEPLAY</span>
+          <h1>SERVER RULES</h1>
+          <p className="rules-intro">Build a believable world together. Respect the story, respect the community, and keep every scene worth remembering.</p>
         </header>
         <section className="rules-list">
           {rules.map((section, index) => (
-            <article key={index} className="rules-section">
-              <h2 className="category-title" style={{ fontWeight: 'bold' }}>{section.category}</h2>
+            <article key={index} id={`rules-${index}`} className="rules-section">
+              <h2 className="category-title">{section.category}</h2>
               {section.rules.map((rule, ruleIndex) => (
                 <div key={ruleIndex} className="rule-item">
                   <h3>{rule.title}</h3>
-                  <p>- {rule.description}</p>
+                  <p><span className="rule-marker">◆</span>{rule.description}</p>
                 </div>
               ))}
             </article>
           ))}
         </section>
         <div className="rules-buttons">
-          <button onClick={handleGoBack} className="rules-button" aria-label="Go back to the previous page">Go Back</button>
+          <button onClick={handleGoBack} className="rules-button" aria-label="Go back to the home page">RETURN HOME</button>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

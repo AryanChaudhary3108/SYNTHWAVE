@@ -11,12 +11,19 @@
 .subscriptions-title {
   font-size: 3rem;
   text-align: center;
-  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ff28be;
+  background: linear-gradient(100deg, #ff79d7 0%, #ff20b9 55%, #d800d9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(255, 32, 185, 0.28);
 }
 
 .subscriptions-desc {
   text-align: center;
-  color: #cecece;
+  color: #e2c8de;
   line-height: 1.5;
 }
 
@@ -36,15 +43,16 @@
 }
 
 .sub-button {
-  color: white;
+  color: #fff1fc;
   white-space: nowrap;
   font-size: 0.875rem;
   font-weight: 500;
   background: transparent;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
   outline: none;
   border-radius: 5px;
-  border: 1px solid #616161;
+  border: 1px solid #ff28be;
+  background: rgba(255, 40, 190, 0.1);
   padding: 0.4rem 1rem;
   position: relative;
   user-select: none;
@@ -56,11 +64,13 @@
 }
 
 .sub-button:hover {
-  border-color: #8685ef;
+  border-color: #ff9be6;
+  background: rgba(255, 40, 190, 0.22);
+  box-shadow: 0 0 16px rgba(255, 40, 190, 0.3);
 }
 
 .sub-button:active {
-  border-color: #8685ef;
+  border-color: #d800d9;
 }
 
 .ping-effect {
@@ -94,7 +104,7 @@
 .carousel-control:hover {
   background-color: transparent;
   color: #fff;
-  border: 1px solid #8685ef;
+  border: 1px solid #ff28be;
 }
 
 .carousel-control:disabled {

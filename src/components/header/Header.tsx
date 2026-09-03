@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../supabase';
-import { Grid2X2, LogOut } from 'lucide-react';
+import { BookOpen, Grid2X2, LogOut } from 'lucide-react';
 import './Header.css';
 
 type Admin = {
@@ -115,10 +115,24 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="logo">
+      <button className="logo" onClick={() => navigate('/')} aria-label="Go to home page">
         <img src="/FEVICON.png" alt="Synthwave Roleplay logo" />
-
-      </div>
+      </button>
+      <nav className="navigation" aria-label="Primary navigation">
+        <button className="nav-link" onClick={() => navigate('/rules')}>
+          <BookOpen size={16} strokeWidth={1.8} />
+          RULES
+        </button>
+        <a
+          className="nav-link"
+          href="https://discord.gg/ygSGMfBFeS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="discord-nav-mark" aria-hidden="true"><span>●</span><span>●</span></span>
+          JOIN DISCORD
+        </a>
+      </nav>
       {user ? (
         <div className="profile-container" ref={profileContainerRef}>
           <button className="connect-button" onClick={handleConnectClick}>
