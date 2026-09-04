@@ -67,10 +67,20 @@ const App: React.FC = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
+    // Clean up leftover # from Supabase OAuth redirect
+    if (window.location.hash === '#' || window.location.hash.includes('access_token')) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+
     const fetchUserData = async () => {
       try {
         const { data: { session }, } = await supabase.auth.getSession();
         setUser(session?.user || null);
+
+        // Clean hash again after Supabase has consumed the token
+        if (window.location.hash) {
+          window.history.replaceState(null, '', window.location.pathname);
+        }
 
         if (session?.user) {
           const { data: adminData, error } = await supabase
@@ -94,9 +104,6 @@ const App: React.FC = () => {
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user || null);
-      if (window.location.hash) {
-        window.history.replaceState(null, '', window.location.pathname);
-      }
     });
 
     return () => authListener.subscription.unsubscribe();
