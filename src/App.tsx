@@ -67,8 +67,8 @@ const App: React.FC = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    // Clean up leftover # from Supabase OAuth redirect
-    if (window.location.hash === '#' || window.location.hash.includes('access_token')) {
+    // Only clean bare leftover "#" on mount (NOT #access_token - Supabase needs that)
+    if (window.location.hash === '#') {
       window.history.replaceState(null, '', window.location.pathname);
     }
 
@@ -77,7 +77,7 @@ const App: React.FC = () => {
         const { data: { session }, } = await supabase.auth.getSession();
         setUser(session?.user || null);
 
-        // Clean hash again after Supabase has consumed the token
+        // Clean hash after Supabase has consumed the token
         if (window.location.hash) {
           window.history.replaceState(null, '', window.location.pathname);
         }
