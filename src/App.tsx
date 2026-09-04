@@ -94,6 +94,9 @@ const App: React.FC = () => {
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user || null);
+      if (_event === 'SIGNED_IN' && window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname);
+      }
     });
 
     return () => authListener.subscription.unsubscribe();
