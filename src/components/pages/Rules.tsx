@@ -8,6 +8,7 @@ const Rules: React.FC = () => {
   const [selectedSection, setSelectedSection] = useState(0);
 
   const handleGoBack = () => {
+    window.scrollTo(0, 0);
     navigate("/");
   };
 

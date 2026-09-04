@@ -14,13 +14,19 @@ const Dashboard = lazy(() => import("./components/admin/Dashboard"));
 const Queue = lazy(() => import("./components/queue/QueueSystem"));
 const NotFound = lazy(() => import("./components/pages/NotFound"));
 
-const Layout: React.FC = () => (
-  <>
-    <Header />
-    <Home />
-    <Footer />
-  </>
-);
+const Layout: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  );
+};
 
 const pageVariants = {
   initial: { opacity: 0, x: 100 },
@@ -28,16 +34,22 @@ const pageVariants = {
   exit: { opacity: 0, x: -100 },
 };
 
-const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <motion.div
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    variants={pageVariants}
-    transition={{ duration: 0.5 }}>
-    {children}
-  </motion.div>
-);
+const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageVariants}
+      transition={{ duration: 0.5 }}>
+      {children}
+    </motion.div>
+  );
+};
 
 // Fallback for Suspense
 const LoadingFallback = () => (

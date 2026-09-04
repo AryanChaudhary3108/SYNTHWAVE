@@ -31,7 +31,10 @@ const Login: React.FC = () => {
 
     try {
       const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'discord'
+        provider: 'discord',
+        options: {
+          redirectTo: window.location.origin,
+        },
       });
       if (error) {
         setError(error.message);
